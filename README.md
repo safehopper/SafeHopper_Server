@@ -1,6 +1,6 @@
 # SafeHopper Server Endpoints
 
-Note: Not all endpoints have been implemented, you will receive a response of "NOT IMPLEMENTED: <Feature>" if the feature has not been implemented yet.
+Note: Not all endpoints have been implemented, you will receive a response of "NOT IMPLEMENTED: [ Feature ]" if the feature has not been implemented yet.
 
 **Users**
 ----
