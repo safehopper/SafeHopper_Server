@@ -1,5 +1,6 @@
-# SafeHopper Server
-## API Endpoints
+# SafeHopper Server Endpoints
+
+Note: Not all endpoints have been implemented, you will receive a response of 
 
 **Users**
 ----
