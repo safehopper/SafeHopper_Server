@@ -2,6 +2,8 @@
 
 Note: Not all endpoints have been implemented, you will receive a response of "NOT IMPLEMENTED: [ Feature ]" if the feature has not been implemented yet.
 
+Base URL: https://safe-hopper-server.herokuapp.com/
+
 **Users**
 ----
 * **Get User Info**
