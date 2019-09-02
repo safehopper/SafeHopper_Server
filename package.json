@@ -20,6 +20,7 @@
     "amazon-cognito-identity-js": "^3.0.15",
     "aws-sdk": "^2.520.0",
     "body-parser": "^1.19.0",
+    "dotenv": "^8.1.0",
     "express": "^4.17.1",
     "jsonwebtoken": "^8.5.1",
     "jwk-to-pem": "^2.0.1",
