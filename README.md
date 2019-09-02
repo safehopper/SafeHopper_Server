@@ -40,11 +40,61 @@ Base URL: https://safe-hopper-server.herokuapp.com/
   
   * ***Params***
     
-    User object in the body of the request.
+    User information in the body of the request.
+    
+    Sample request:
+      POST to https://safe-hopper-server.herokuapp.com/user/
+      ```
+          {
+            "password":"Password1!",
+            "firstName":"John",
+            "lastName":"Doe",
+            "phone": "+15555555555",
+            "email":"johndoe@email.com"
+          }
+      ```
     
   * ***Successful Response***
     
     Returns a user object with new user's data.
+    
+* **Confirm a User**
+
+  Confirms the user's email making it possible for them to log in.
+
+  * ***URL***
+
+    /user/confirm
+  
+  * ***Method***
+
+    POST
+  
+  * ***Params***
+    
+    User's email and their confirmation code in the body of the request as a string.
+    
+    Sample request:
+      POST to https://safe-hopper-server.herokuapp.com/user/confirm
+      ```
+          {
+            "email":"johndoe@email.com",
+            "mfaCode": "123456"
+          }
+      ```
+    
+  * ***Successful Response***
+    
+    Response with content explaining confirmation result.
+    
+    Example:
+    ```
+    {
+    "error": false,
+    "content": {
+        "confirmation": "SUCCESS"
+    }
+    ```
     
 * **Login User**
 
@@ -62,9 +112,18 @@ Base URL: https://safe-hopper-server.herokuapp.com/
     
     User credentials in the body of the request.
     
+    Sample request:
+      POST to https://safe-hopper-server.herokuapp.com/user/authenticate
+      ```
+          {
+            "email":"johndoe@email.com",
+            "password":"Password1!"
+          }
+      ```
+    
   * ***Successful Response***
     
-    TBD
+    User object is returned.
     
 * **Modify Existing User**
 
