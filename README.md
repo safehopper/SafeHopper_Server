@@ -6,25 +6,9 @@ Base URL: https://safe-hopper-server.herokuapp.com/
 
 **Users**
 ----
-* **Get User Info**
 
-  Returns user's information
-
-  * ***URL***
-
-    /user/{id}
-  
-  * ***Method***
-
-    GET
-  
-  * ***Params***
-    
-    UserId in the url
-    
-  * ***Successful Response***
-    
-    Returns a user object with user's data.
+* **User Flow**
+  To use a new user create a new user > confirm that user > log them in.
 
 * **Create New User**
 
