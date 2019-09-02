@@ -111,7 +111,7 @@ Base URL: https://safe-hopper-server.herokuapp.com/
     
 * **Modify Existing User**
 
-  Updates a user's information in the user pool
+  Updates a user's phone, firstName, and/or lastName attributes in the user pool. The email and password sent are used to authenticate the user first, then the sent values will overwrite the existing values for phone, firstName, and lastName.
 
   * ***URL***
 
@@ -123,11 +123,29 @@ Base URL: https://safe-hopper-server.herokuapp.com/
   
   * ***Params***
     
-    User object in the body of the request.
+    User attributes in the request body.
+    
+    Sample request:
+    ```
+    {
+      "email":"johndoe@email.com"
+      "password":"Password1!",
+      "firstName":"John",
+      "lastName":"Doe",
+      "phone": "+15555555",
+    }
+    ```
     
   * ***Successful Response***
-    
-    TBD
+    Example:
+    ```
+    {
+      "error": false,
+      "content": {
+          "modifyResult": "SUCCESS"
+      }
+    }
+    ```
     
 * **Delete User**
 
@@ -135,7 +153,7 @@ Base URL: https://safe-hopper-server.herokuapp.com/
 
   * ***URL***
 
-    /user/{id}
+    /user
   
   * ***Method***
 
@@ -143,11 +161,27 @@ Base URL: https://safe-hopper-server.herokuapp.com/
   
   * ***Params***
     
-    User id in the url.
+    User email and password in body of the request.
+    
+    Sample request:
+    ```
+    {
+      "email":"johndow@email.com",
+	    "password":"Password1!"
+    }
+    ```
     
   * ***Successful Response***
-    
-    TBD
+    Example:
+    ```
+    {
+      "error": false,
+      "content": {
+          "deleteResult": "SUCCESS"
+      }
+    }
+    ```
+
     
 **Routes**
 ----
