@@ -1,4 +1,5 @@
 var express = require('express');
+var bodyParser = require('body-parser')
 var routes = require('./lib/api/routes/routesIndex');
 
 app = express(),
@@ -7,6 +8,8 @@ port = process.env.PORT || 3000;
 app.listen(port);
 
 // Assign routes to the app
+app.use(bodyParser.json()); // support json encoded bodies
+app.use(bodyParser.urlencoded({ extended: false })); // support encoded bodies
 app.use('/', routes);
 
 console.log('SafeHopper RESTful API server started on: ' + port);
