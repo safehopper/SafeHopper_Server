@@ -34,7 +34,8 @@ Base URL: https://safe-hopper-server.herokuapp.com/
             "firstName":"John",
             "lastName":"Doe",
             "phone": "+15555555555",
-            "email":"johndoe@email.com"
+            "email":"johndoe@email.com",
+	    "key":"yourAPIKey"
           }
       ```
     
@@ -63,7 +64,8 @@ Base URL: https://safe-hopper-server.herokuapp.com/
       ```
           {
             "email":"johndoe@email.com",
-            "mfaCode": "123456"
+            "mfaCode": "123456",
+	    "key":"yourAPIKey"
           }
       ```
     
@@ -101,7 +103,8 @@ Base URL: https://safe-hopper-server.herokuapp.com/
       ```
           {
             "email":"johndoe@email.com",
-            "password":"Password1!"
+            "password":"Password1!",
+	    "key":"yourAPIKey"
           }
       ```
     
@@ -133,6 +136,7 @@ Base URL: https://safe-hopper-server.herokuapp.com/
       "firstName":"John",
       "lastName":"Doe",
       "phone": "+15555555",
+      "key":"yourAPIKey"
     }
     ```
     
@@ -166,8 +170,9 @@ Base URL: https://safe-hopper-server.herokuapp.com/
     Sample request:
     ```
     {
-      "email":"johndow@email.com",
-	    "password":"Password1!"
+      	"email":"johndow@email.com",
+	"password":"Password1!",
+	"key":"yourAPIKey"
     }
     ```
     
