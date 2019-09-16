@@ -12,4 +12,4 @@ app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({ extended: false })); // support encoded bodies
 app.use('/', routes);
 
-console.log('SafeHopper RESTful API server started on: ' + port);
+console.log('SafeHopper RESTful API server started');
