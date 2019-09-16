@@ -29,14 +29,14 @@ Base URL: https://safe-hopper-server.herokuapp.com/
     Sample request:
       POST to https://safe-hopper-server.herokuapp.com/user/
       ```
-          {
-            "password":"Password1!",
-            "firstName":"John",
-            "lastName":"Doe",
-            "phone": "+15555555555",
-            "email":"johndoe@email.com",
-	    "key":"yourAPIKey"
-          }
+	{
+	"password":"Password1!",
+	"firstName":"John",
+	"lastName":"Doe",
+	"phone": "+15555555555",
+	"email":"johndoe@email.com",
+	"key":"yourAPIKey"
+	}
       ```
     
   * ***Successful Response***
@@ -62,11 +62,11 @@ Base URL: https://safe-hopper-server.herokuapp.com/
     Sample request:
       POST to https://safe-hopper-server.herokuapp.com/user/confirm
       ```
-          {
-            "email":"johndoe@email.com",
-            "mfaCode": "123456",
-	    "key":"yourAPIKey"
-          }
+	{
+	  "email":"johndoe@email.com",
+	  "mfaCode": "123456",
+	  "key":"yourAPIKey"
+	}
       ```
     
   * ***Successful Response***
@@ -75,11 +75,12 @@ Base URL: https://safe-hopper-server.herokuapp.com/
     
     Example:
     ```
-    {
-    "error": false,
-    "content": {
-        "confirmation": "SUCCESS"
-    }
+	{
+		"error": false,
+		"content": {
+			"confirmation": "SUCCESS"
+			}
+	}
     ```
     
 * **Login User**
@@ -101,11 +102,11 @@ Base URL: https://safe-hopper-server.herokuapp.com/
     Sample request:
       POST to https://safe-hopper-server.herokuapp.com/user/authenticate
       ```
-          {
-            "email":"johndoe@email.com",
-            "password":"Password1!",
-	    "key":"yourAPIKey"
-          }
+	{
+		"email":"johndoe@email.com",
+		"password":"Password1!",
+		"key":"yourAPIKey"
+	}
       ```
     
   * ***Successful Response***
@@ -169,22 +170,22 @@ Base URL: https://safe-hopper-server.herokuapp.com/
     
     Sample request:
     ```
-    {
-      	"email":"johndow@email.com",
-	"password":"Password1!",
-	"key":"yourAPIKey"
-    }
+	{
+		"email":"johndow@email.com",
+		"password":"Password1!",
+		"key":"yourAPIKey"
+	}
     ```
     
   * ***Successful Response***
     Example:
     ```
-    {
-      "error": false,
-      "content": {
-          "deleteResult": "SUCCESS"
-      }
-    }
+	{
+		"error": false,
+		"content": {
+			"deleteResult": "SUCCESS"
+		}
+	}
     ```
 
     
