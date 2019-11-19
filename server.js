@@ -10,7 +10,7 @@ app.listen(port);
 app.set('view engine', 'ejs')
 
 // Assign routes to the app
-app.use(cors());
+app.use(cors({credentials: true}));
 app.use(bodyParser.json()); // support json encoded bodies
 app.use(bodyParser.urlencoded({ extended: false })); // support encoded bodies
 app.use('/', routes);
