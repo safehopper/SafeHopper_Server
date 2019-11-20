@@ -28,6 +28,7 @@
     "jwk-to-pem": "^2.0.1",
     "node-fetch": "^2.6.0",
     "request": "^2.88.0",
+    "twilio": "^3.37.1",
     "uuid": "^3.3.3"
   },
   "devDependencies": {
